@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        android:id="@+id/mImgStadium" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=""
+        android:layout_below="@+id/mImgStadium"
+        android:id="@+id/mStadiumName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:layout_below="@+id/mStadiumName"
+        android:id="@+id/mFullVenueLocation" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        android:layout_below="@+id/mFullVenueLocation"
+        android:id="@+id/mBtnShare"
+        />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_below="@+id/mBtnShare"
+        android:id="@+id/mScheduleTime"
+        />
+</RelativeLayout>
